@@ -1,0 +1,43 @@
+{
+  "name": "nodesns",
+  "version": "0.0.1",
+  "description": "node express sns",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production PORT=80 pm2 start server.js -i 0",
+    "dev": "nodemon server",
+    "test": "jest"
+  },
+  "author": "hanjhoon0726",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cjs": "^0.0.11",
+    "connect-redis": "^7.1.0",
+    "cookie-parser": "^1.4.6",
+    "cross-env": "^7.0.3",
+    "csurf": "^1.11.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "helmet": "^7.0.0",
+    "hpp": "^0.2.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.6.2",
+    "nunjucks": "^3.2.4",
+    "passport": "^0.6.0",
+    "passport-kakao": "^1.0.1",
+    "passport-local": "^1.0.0",
+    "pm2": "^5.3.0",
+    "redis": "^4.6.10",
+    "sanitize-html": "^2.11.0",
+    "sequelize": "^6.33.0",
+    "sequelize-cli": "^6.6.1",
+    "winston": "^3.11.0",
+    "winston-daily-rotate-file": "^4.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
